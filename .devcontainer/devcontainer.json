@@ -1,0 +1,27 @@
+{
+  "image": "ghcr.io/ucsc-cse-210a/ucsc-cse210a:8.19",
+  "customizations": {
+    "vscode": {
+      "extensions": ["maximedenes.vscoq"],
+      "settings": {
+        "coqtop.binPath" : "/home/coq/.opam/4.14.2+flambda/bin",
+        "files.exclude": {
+          "**/*.aux": true,
+          "**/*.glob": true,
+          "**/*.vo": true,
+          "**/*.vos": true,
+          "**/*.vok": true,
+          "**/*.html": true,
+          "**/.*.report": true,
+          "**/.*.cache": true
+        },
+        "coq.loadCoqProject": true,
+        "coq.coqProjectRoot": ".",
+        "[coq]": {
+          "editor.tabSize": 2,
+          "editor.insertSpaces": true
+        }
+      }
+    }
+  }
+}
